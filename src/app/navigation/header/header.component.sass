@@ -1,9 +1,18 @@
+$paddingLeft: 15px
+$paddingRight: 15px
+
+$colorPassive: #a4a19c
+$colorActive: #e74b4a
+$colorHover: #e74b4a
+$colorLogotip: #055cb8
+$colorBackground: #ffffff
+
 mat-toolbar
-  background-color: #fff
+  background-color: $colorBackground
 .logo
   text-decoration: none
   cursor: pointer
-  color: #055cb8
+  color: $colorLogotip
   font-size: 22px
   font-weight: 700
   letter-spacing: 1.1px
@@ -13,16 +22,24 @@ ul
     text-decoration: none
     list-style: none
     display: inline-block
+    padding-left: $paddingLeft
+    padding-right: $paddingRight
+    vertical-align: center
     a
       text-decoration: none
       font-weight: 400
       font-size: 18px
-      color: #a4a19c
-      padding-left: 20px
-      padding-right: 20px
-    a:last-child
-      padding-right: 0px
+      color: $colorPassive
     a:hover
-      color: #e74b4a
+      color: $colorHover
     .active
-      color: #e74b4a
+      color: $colorActive
+img
+  height: 28px
+  width: 28px
+  cursor: pointer
+  padding-right: $paddingRight
+  padding-left: $paddingLeft
+  img:last-child
+    padding-right: 0px
+
